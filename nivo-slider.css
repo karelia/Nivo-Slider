@@ -8,7 +8,7 @@
  * 
  * March 2010
 */
- 
+
 
 /* The Nivo Slider styles */
 .nivoSlider {
@@ -142,10 +142,6 @@
 	border: 0px none !important;
 }
 
-.nivo-dots .nivo-controlNav a.active {
-	background-position:0 -22px;
-}
-
 .nivo-directionNav a {
 	display:block;
 	width:30px;
@@ -154,12 +150,36 @@
 	text-indent:-9999px;
 	border: 0px none !important;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 240dpi) {
+    .nivo-dots .nivo-controlNav a {
+        background:url(nivo-images/bullets@2x.png) no-repeat;
+		-moz-background-size: 16px 40px;
+		-o-background-size: 16px 40px;
+        -webkit-background-size: 16px 40px;
+		background-size: 16px 40px;
+    }
+	.nivo-directionNav a {
+		background:url(nivo-images/arrows@2x.png) no-repeat;
+		-moz-background-size: 60px 30px;
+		-o-background-size: 60px 30px;
+        -webkit-background-size: 60px 30px;
+		background-size: 60px 30px;
+	}
+}
+
 a.nivo-nextNav {
 	background-position:-30px 0;
 	right:15px;
 }
 a.nivo-prevNav {
 	left:15px;
+}
+
+.nivo-dots .nivo-controlNav a.active {
+	background-position:0 -22px;
 }
 
 .nivo-caption {
