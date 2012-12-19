@@ -7,9 +7,9 @@
  * http://www.opensource.org/licenses/mit-license.php
  * 
  * March 2010
- */
+*/
  
- 
+
 /* The Nivo Slider styles */
 .nivoSlider {
 	position:relative;
@@ -81,9 +81,108 @@
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav a {
 	position:relative;
+	margin-right:8px;
 	z-index:9;
 	cursor:pointer;
 }
 .nivo-controlNav a.active {
 	font-weight:bold;
+}
+
+.nivo-dots, .nivo-numbers {
+    margin-bottom:30px;
+}
+
+.nivoSlider {
+	position:relative;
+	background:#fff url(nivo-images/loading.gif) no-repeat 50% 50%;
+	-webkit-box-shadow: 0px 1px 5px 0px rgb(128,128,128);
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 1px 5px 0px rgb(128,128,128);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 1px 5px 0px rgb(128,128,128);
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.nivoSlider a {
+	border:0;
+}
+
+.nivo-dots .nivo-controlNav {
+	position:absolute;
+	right:0;
+    height:16px;
+	bottom:-24px;
+	border:none;
+}
+
+.nivo-numbers .nivo-controlNav {
+	position:absolute;
+	bottom:-24px;
+}
+
+.nivo-thumbs .nivo-controlNav {
+	position:absolute;
+	left:8px;
+}
+
+.nivo-dots .nivo-controlNav a {
+	display:block;
+	width:16px;
+	height:16px;
+	background:url(nivo-images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	margin-right:3px;
+	float:left;
+	border: 0px none !important;
+}
+
+.nivo-dots .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(nivo-images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border: 0px none !important;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.nivo-caption a:hover {
+    color:#fff;
+}
+
+.nivo-controlNav img {
+	display:inline; /* Unhide the thumbnails */
+	position:relative;
+	margin:0 !important;
+	border:none !important;
+	padding:0 !important;
+	-webkit-box-shadow: 0px 1px 5px 0px rgb(128,128,128);
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 1px 5px 0px rgb(128,128,128);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 1px 5px 0px rgb(128,128,128);
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
