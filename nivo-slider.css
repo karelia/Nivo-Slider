@@ -173,7 +173,8 @@ Supports Thumbs: true
     -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
-.nivo-directionNav a:hover { opacity: 1; }
+.nivoSlider:hover .nivo-directionNav a { opacity: 1; }
+
 a.nivo-nextNav {
 	background-position:-30px 0;
 	right:15px;
