@@ -144,10 +144,6 @@ Supports Thumbs: true
 	display:block;
 }
 
-.nivo-controlNav {
-	text-align: right;
-}
-
 .nivo-controlNav a {
 	margin-right:8px;
 }
@@ -198,17 +194,15 @@ a.nivo-prevNav {
     color:#fff;
 }
 
-.nivo-controlNav.nivo-thumbs-enabled {
+.nivo-thumbs-enabled {
 	width: 100%;
 }
-.nivo-controlNav.nivo-thumbs-enabled a {
+.nivo-thumbs-enabled a {
 	width: auto;
 	height: auto;
 	background: none;
 	margin-bottom: 5px;
 }
-.nivo-controlNav.nivo-thumbs-enabled img {
-	display: block;
-	width: 120px;
-	height: auto;
+.nivo-thumbs-enabled img {
+	padding:0 !important; margin:0; background:none !important; border:none;
 }
