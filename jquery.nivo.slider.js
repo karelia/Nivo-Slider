@@ -150,7 +150,19 @@
                     if(!child.is('img')){
                         child = child.find('img:first');
                     }
-                    if(child.attr('data-thumb')) vars.controlNavEl.append('<a class="nivo-control" rel="'+ i +'"><img src="'+ child.attr('data-thumb') +'" alt="" /></a>');
+					var dataThumb = child.attr('data-thumb');
+                    if(dataThumb)
+					{
+						var thumbLink = '<a class="nivo-control" rel="'+ i +'"><img src="'+ dataThumb +'"';
+						var dataThumbWidth = child.attr('data-thumb-width');
+						if (dataThumbWidth) thumbLink += ' width="' + dataThumbWidth + '"';
+						var dataThumbHeight = child.attr('data-thumb-height');
+						if (dataThumbHeight) thumbLink += ' height="' + dataThumbHeight+ '"';
+						var dataThumbAlt = child.attr('data-thumb-alt') || "";
+						thumbLink += ' alt="' + dataThumbAlt + '"';
+						thumbLink += ' /></a>';
+						vars.controlNavEl.append(thumbLink);
+					}
                 } else {
                     vars.controlNavEl.append('<a class="nivo-control" rel="'+ i +'">'+ (i + 1) +'</a>');
                 }
